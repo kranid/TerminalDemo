@@ -1,0 +1,22 @@
+{
+  "name": "BrailleTerminalDemo",
+  "version": "1.0.0",
+  "description": "terminal demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "build": "webpack --mode production"
+  },
+  "author": "Konstantin Galiakhmetov",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.5.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "howler": "^2.2.4"
+  }
+}
