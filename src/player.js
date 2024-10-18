@@ -2,9 +2,6 @@ import { Howl, Howler } from "howler";
 export class Player {
   constructor(speechEnabled) {
     this._speechEnabled =speechEnabled;
-    this.touch = new Howl({
-      src: ["sounds/touch.mp3"],
-    });
 
     this.success = new Howl({
       src: ["sounds/success.mp3"],
@@ -21,7 +18,11 @@ export class Player {
   }
 
   PlayTouch() {
+      this.touch = new Howl({
+        src: ["sounds/touch.mp3"],
+      });
     this.touch.play();
+    console.log("touch");
   }
 
   PlaySuccess(digit) {
